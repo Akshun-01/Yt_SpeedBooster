@@ -15,13 +15,6 @@ chrome.action.onClicked.addListener(async(tab)=>{
       tabId: tab.id,
       text: nextState,
     });
-
-    if (nextState === "ON") {
-      await chrome.scripting.executeScript({
-        target : {tabId : tab.id},
-        files : [ "speedUp.js" ],
-      })
-    } 
   }
 })
   
