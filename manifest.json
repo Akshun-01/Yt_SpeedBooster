@@ -4,18 +4,17 @@
     "version": "1.0",
     "description": "Increases the speed of YouTube videos",
     "icons": {
-      "128": "images/logo.png"
+        "128": "images/logo.png"
     },
-
-    "permissions": ["activeTab","scripting"],
-
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
     "action": {
-      "default_icon": "images/logo.png"
+        "default_icon": "images/logo.png",
+        "default_popup": "popup.html"
     },
-
     "background": {
-      "service_worker": "background.js"
+        "service_worker": "background.js"
     }
-    
-  }
-  
+}
