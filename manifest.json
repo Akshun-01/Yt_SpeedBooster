@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Speed Booster",
+    "version": "1.0",
+    "description": "Increases the speed of YouTube videos",
+    "icons": {
+      "128": "images/logo.png"
+    },
+
+    "permissions": ["activeTab","scripting"],
+
+    "action": {
+      "default_icon": "images/logo.png"
+    },
+
+    "background": {
+      "service_worker": "background.js"
+    }
+    
+  }
+  
